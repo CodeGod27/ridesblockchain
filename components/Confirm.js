@@ -39,17 +39,17 @@ const Confirm = () => {
         }),
       })
 
-//       await metamask.request({
-//         method: 'eth_sendTransaction',
-//         params: [
-//           {
-//             from: currentAccount,
-//             to: process.env.NEXT_PUBLIC_UBER_ADDRESS,
-//             gas: '0x7SEF40', // 520000 Gwei
-//             value: ethers.utils.parseEther(price)._hex,
-//           },
-//         ],
-//       })
+      await metamask.request({
+        method: 'eth_sendTransaction',
+        params: [
+          {
+            from: currentAccount,
+            to: process.env.NEXT_PUBLIC_UBER_ADDRESS,
+            gas: '6721975', // 520000 Gwei
+            value: ethers.utils.parseEther(price)._hex,
+          },
+        ],
+      })
     } catch (error) {
       console.error(error)
     }

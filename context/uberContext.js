@@ -170,7 +170,7 @@ export const UberProvider = ({ children }) => {
 
   return (
     <UberContext.Provider
-    value={{
+     value={{
         pickup,
         setPickup,
         dropoff,
@@ -184,10 +184,10 @@ export const UberProvider = ({ children }) => {
         currentUser,
         selectedRide,
         setSelectedRide,
-        // price,
-        // setPrice,
-        // basePrice,
-         metamask,
+        price,
+        setPrice,
+        basePrice,
+        metamask,
       }}
     >
       {children}
